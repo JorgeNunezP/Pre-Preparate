@@ -1,0 +1,10 @@
+.container {
+    align-items: center;
+    background-color: darkgrey;
+    text-align: center;
+}
+
+.panel {
+    align-content: center;
+    text-align: center;
+}
