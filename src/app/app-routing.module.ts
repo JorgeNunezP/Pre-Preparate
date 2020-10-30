@@ -11,13 +11,14 @@ import { NewSubComponent } from './new-sub/new-sub.component';
 
 const routes: Routes = [
   {path: 'subject', component: SubjectComponent},
-  {path: '', component: LoginComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'exam', component: ExamComponent},
   {path: 'dev', component: DevComponent},
   {path: 'result', component: ResultComponent},
-  {path: 'newSub', component: NewSubComponent}
+  {path: 'newSub', component: NewSubComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 
 @NgModule({
