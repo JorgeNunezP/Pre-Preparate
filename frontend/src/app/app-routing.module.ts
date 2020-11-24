@@ -12,6 +12,7 @@ import { AuthGuard } from './auth.guard';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const routes: Routes = [
+  {path: '/', component: AboutUsComponent},
   {path: '', component: AboutUsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
