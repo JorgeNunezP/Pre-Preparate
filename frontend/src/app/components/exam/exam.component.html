@@ -1,0 +1,107 @@
+<style media="screen">
+    .checkbox-xl .custom-control-label::before,
+    .checkbox-xl .custom-control-label::after {
+        top: 1.2rem;
+        width: 1.85rem;
+        height: 1.85rem;
+    }
+    
+    .checkbox-xl .custom-control-label {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Examen de conocimientos generales</h1>
+        <h2>Tema actual: Historia-Mexico</h2>
+    </div>
+    <div class="col-sm-3">
+        <! Panel selector de preguntas>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4>Preguntas</h4>
+            </div>
+            <! 1 linea de #>
+            <div class="panel-body">
+                <div class="btn-group" aria-label="First group">
+                    <button type="button" class="btn btn-success">01</button>
+                    <button type="button" class="btn btn-danger">02</button>
+                    <button type="button" class="btn btn-info">03</button>
+                    <button type="button" class="btn btn-light">04</button>
+                    <button type="button" class="btn btn-light">05</button>
+                </div>
+                <! 2 linea de #>
+                <div class="btn-group" aria-label="First group">
+                    <button type="button" class="btn btn-light">06</button>
+                    <button type="button" class="btn btn-light">07</button>
+                    <button type="button" class="btn btn-light">08</button>
+                    <button type="button" class="btn btn-light">09</button>
+                    <button type="button" class="btn btn-light">10</button>
+                </div>
+                <! 3 linea de #>
+                <div class="btn-group" aria-label="First group">
+                    <button type="button" class="btn btn-light">11</button>
+                    <button type="button" class="btn btn-light">12</button>
+                    <button type="button" class="btn btn-light">13</button>
+                    <button type="button" class="btn btn-light">14</button>
+                    <button type="button" class="btn btn-light">15</button>
+                </div>
+                <! 4 linea de #>
+                <div class="btn-group" aria-label="First group">
+                    <button type="button" class="btn btn-light">16</button>
+                    <button type="button" class="btn btn-light">17</button>
+                    <button type="button" class="btn btn-light">18</button>
+                    <button type="button" class="btn btn-light">19</button>
+                    <button type="button" class="btn btn-light">20</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <!Panel con la pregunta>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4>Pregunta 3. ¿Quien mato a Colosio?</h4>
+            </div>
+            <!Respuestas>
+            <div class="panel-body">
+                <h3>
+                    <div class="custom-control custom-checkbox checkbox-xl">
+                        <input type="checkbox" class="custom-control-input" id="Answer1">
+                        <label class="custom-control-label" for="Answer1">Lord peña</label>
+                    </div>
+                    <br>
+                    <div class="custom-control custom-checkbox checkbox-xl">
+                        <input type="checkbox" class="custom-control-input" id="Answer2">
+                        <label class="custom-control-label" for="Answer2">Miguel Hidalgo</label>
+                    </div>
+                    <br>
+                    <div class="custom-control custom-checkbox checkbox-xl">
+                        <input type="checkbox" class="custom-control-input" id="Answer3">
+                        <label class="custom-control-label" for="Answer3">Salinas</label>
+                    </div>
+                    <br>
+                    <div class="custom-control custom-checkbox checkbox-xl">
+                        <input type="checkbox" class="custom-control-input" id="Answer4">
+                        <label class="custom-control-label" for="Answer4">Luis Miguel</label>
+                    </div>
+                </h3>
+                <!Boton bandera>
+                <div class="float-right">
+                    <button type="button" class="btn btn-warning">Marcar pregunta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <! Botones>
+    <div class="float-right">
+        <button type="button" class="btn btn-dark">Anterior</button>
+        <button type="button" class="btn btn-primary">Siguiente</button>
+    </div>
+</div>

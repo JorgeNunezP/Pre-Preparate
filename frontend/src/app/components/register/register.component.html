@@ -1,0 +1,102 @@
+<style>
+ :host {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 14px;
+        color: #333;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .content {
+        display: flex;
+        width: 50%;
+        margin: 2% auto;
+        position: static;
+        padding: 0 16px;
+        height: 83vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(100, 153, 114);
+    }
+    
+    .password-icon {
+        float: right;
+        position: relative;
+        margin: -25px 10px 0 0;
+        cursor: pointer;
+    }
+    
+    .form-signin {
+        width: 100%;
+        max-width: 420px;
+        padding: 15px;
+        margin: auto;
+    }
+}
+</style>
+
+<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+<script>
+    window.addEventListener("load", function() {
+        // icono para poder interaccionar con el elemento
+        showPassword = document.querySelector('.show-password');
+        showPassword.addEventListener('click', () => {
+            // elementos input de tipo password
+            password = document.querySelector('.password');
+            if (password.type === "text") {
+                password.type = "password"
+                showPassword.classList.remove('fa-eye-slash');
+            } else {
+                password.type = "text"
+                showPassword.classList.toggle("fa-eye-slash");
+            }
+        })
+    });
+</script>
+
+
+
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                <H2>Registrarse</H2>
+                <img class="mb-4" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/746/4149847746_b81880c6-f079-49ed-bfc2-6c8d1559a968.png?cb=1605732579" alt="" width="200">
+            </div>
+            <div class="card-body">
+                <form (submit)="signUp()">
+                    <div class="form-group ">
+                        <input type="text" [(ngModel)]="user.name" name="inputName " class="form-control " placeholder="Nombre " required autofocus>
+                        <label for="inputEmail ">Nombre</label>
+                    </div>
+                    <div class="form-group ">
+                        <input type="email" [(ngModel)]="user.mail" name="inputEmail " class="form-control " placeholder="Correo Electronico " required autofocus>
+                        <label for="inputEmail ">Correo Electronico</label>
+                    </div>
+                    <div class="form-group ">
+                        <input type="password" [(ngModel)]="user.pass" name="password" class=" form-control password " placeholder="Contraseña " required>
+                        <label for="inputPassword ">Contraseña</label>
+                        <span class="fa fa-fw fa-eye password-icon show-password "></span>
+                    </div>
+                    <div class="form-group ">
+                        <input type="password" [(ngModel)]="user.pass2 " name="password2 " class="form-control password " placeholder="Confirmar Contraseña " required>
+                        <label for="inputPassword ">Confirmar Contraseña</label>
+                        <span class="fa fa-fw fa-eye password-icon show-password "></span>
+                    </div>
+
+                    <button class="btn btn-primary btn-block " type="submit ">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+        <div class="error">{{ error.error }}</div>
+        <p class="mt-5 mb-3 text-muted text-center ">&copy; 2020</p>
+
+
+
+    </div>
+</div>
+
+<router-outlet></router-outlet>

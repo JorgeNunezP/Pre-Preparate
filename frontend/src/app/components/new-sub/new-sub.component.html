@@ -1,0 +1,87 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Agregar preguntas</h1>
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2>Agregar manualmente</h2>
+            </div>
+            <div class="panel-body">
+
+                <h4>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Tema</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Hisoria</a>
+                            <a class="dropdown-item" href="#">Matematicas</a>
+                            <a class="dropdown-item" href="#">Tecnologia</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info">Sub Tema</button>
+                        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Revolución</a>
+                            <a class="dropdown-item" href="#">Industria</a>
+                            <a class="dropdown-item" href="#">Templarios</a>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                            <label>Pregunta</label>
+                            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="¿?">
+                        </div>
+                        <div class="form-group">
+                            <label>Respuestas</label>
+                            <input type="text" class="form-control" placeholder="Falsa 1" id="false1">
+                            <input type="text" class="form-control" placeholder="Falsa 2" id="false2">
+                            <input type="text" class="form-control" placeholder="Falsa 3" id="false3">
+                            <input type="text" class="form-control" placeholder="Correcta" id="correct">
+                        </div>
+                        <div class="float-right">
+                            <button type="submit" class="btn btn-primary" id="addByHand">Agregar</button>
+                        </div>
+
+                    </form>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2>Agregar por archivo</h2>
+            </div>
+            <div class="panel-body">
+                <br><br>
+                <h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="uploadFile">Archivo</label>
+                            <input type="file" class="form-control-file" id="uploadFile">
+                        </div>
+                    </form>
+                    <br><br><br>
+                    <label for="quetionsAmount">Preguntas dectectadas</label>
+                    <input class="form-control" type="text" placeholder="100" readonly>
+                    <br><br>
+                    <div class="float-right">
+                        <button type="submit" class="btn btn-primary" id="addByFile">Agregar</button>
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
