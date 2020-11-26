@@ -1,0 +1,27 @@
+.container {
+    max-width: 70%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 10%;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.avance {
+    margin: 10px 0;
+}

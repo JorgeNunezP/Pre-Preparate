@@ -12,26 +12,19 @@ devCrtl.getDevs = async(req, res) => {
 }
 
 devCrtl.getCreateDev = async(req, res) => {
+    console.log(req.body);
+    const { subject_name, subSub_name, question_id, user_id } = req.body;
 
-    const { subj_id, quest_id, us_id } = req.body;
-
-    const newDev = new Dev({ subj_id, quest_id, us_id });
+    const newDev = new Dev({ subject_name, subSub_name, question_id, user_id });
+    console.log(newDev);
     await newDev.save();
     res.status(200).send("desarrollo creado correctamente");
-    /*   const emailUser = await Dev.findOne({ mail: mail });
-      if (emailUser) {
-          // res.redirect('/users/singup');
-          res.status(401).send("El email ya existe");
-      } else {
-       
-      } */
 }
 
 devCrtl.getDev = async(req, res) => {
-    const dev = await Dev.findById(req.params.id);
+    const dev = await Dev.find({ User_id: req.params.user_id });
     res.json(dev);
 }
-
 
 devCrtl.editDev = async(req, res) => {
     const { id } = req.params;

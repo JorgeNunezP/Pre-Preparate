@@ -2,8 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const subjectSchema = new Schema({
     name: { type: String, require: true },
-    sub: { type: String, require: true },
-    info: { type: String, require: true }
+    sub: { type: String, require: true }
 }, {
     timestamps: true
 });

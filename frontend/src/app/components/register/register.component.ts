@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegisterService } from '../../services/register.service'
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-register',
@@ -25,10 +26,16 @@ export class RegisterComponent implements OnInit {
     this.registerService.signUp(this.user)
     .subscribe(
      res => {
+      Swal.fire(
+        'Good job!',
+        'Usuario Creado."',
+        'success'
+      )
        console.log(res)
      },
      err => {console.log(err);
       this.error = err;
+      Swal.fire({ title: 'Error!', text: this.error.error, icon: 'error', confirmButtonText: 'Cool' })
       }
      )
    }

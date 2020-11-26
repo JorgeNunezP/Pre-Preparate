@@ -8,6 +8,7 @@ const user = require('../controllers/user.controller');
 router.get('/signup', user.getUsers);
 router.post('/signup', user.getCreateUser);
 router.post('/signin', user.signin);
+router.put('/editUser', user.editUser);
 
 
 module.exports = router;

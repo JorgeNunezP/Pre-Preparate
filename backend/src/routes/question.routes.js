@@ -1,14 +1,12 @@
 const { Router } = require('express');
 const router = Router();
 
-const user = require('../controllers/question.controller');
+const quest = require('../controllers/question.controller');
 
 
 
-router.get('/signup', user.getUsers);
-router.post('/signup', user.getCreateUser);
-router.post('/signin', user.signin);
-
+router.get('/showAllQuestions', quest.getQuests);
+router.post('/saveQuestion', quest.getCreateQuest);
 
 module.exports = router;
 

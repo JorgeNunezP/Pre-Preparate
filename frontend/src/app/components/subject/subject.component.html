@@ -1,6 +1,6 @@
 <div class="jumbotron">
     <div class="container text-center">
-        <h1 class="display-3">Historia</h1>
+        <h1>Materias</h1>
     </div>
 </div>
 
@@ -16,269 +16,580 @@
     </div>
     <div class="col-9">
         <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+            <div class="tab-pane fade show active" id="v-pills-spanish" role="tabpanel" aria-labelledby="v-pills-spanish-tab">
                 <div class="accordion" id="accordionSubject">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Revolución Mexicana
-          </button>
-                            </h2>
-                        </div>
+                    <form (submit)="saveSubjSpaPal()">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Palabras
+                          </button>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSubject">
+                                <div class="card-body">
+                                    Una palabra es una unidad lingüística con significado y que está formada por: Lexema o raíz; Es la parte de la palabra que no se modifica, que permanece invariable. Morfema; Son los prefijos o sufijos que se añaden a la raíz para crear nuevas palabras
+                                    derivadas.
+                                    <br>
+                                    <img src="https://blog.edx.org/wp-content/uploads/2018/03/espan%CC%83ol.jpg" width="200">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Independencia de México
-             </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </form>
+                    <form (submit)="saveSubjSpaGram()">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Gramática
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject">
+                                <div class="card-body">
+                                    La gramática es el estudio de las reglas y principios que gobiernan el uso de las lenguas y la organización de las palabras dentro de unas oraciones y otro tipo de constituyentes sintácticos.
+                                    <br>
+                                    <img src="https://i0.wp.com/www.eluniversitario.es/wp-content/uploads/2017/02/5.jpg?resize=598%2C232" width="400">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Descrubimiento de América
-          </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </form>
+                    <form (submit)="saveSubjSpaTex()">
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Textos
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject">
+                                <div class="card-body">
+                                    Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. Ademas de ser el cuerpo de un escrito, prescindiendo de las notas, los comentarios, las portadas, las ilustraciones, etc.
+                                    <br>
+                                    <img src="https://image.slidesharecdn.com/textos-100728154004-phpapp01/95/textos-1-728.jpg?cb=1280331666" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    <form (submit)="saveSubjSpaVerb()">
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Verbos
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSubject">
+                                <div class="card-body">
+                                    Se conoce como verbo una clase de palabra cuyo significado indica la acción, el estado o proceso que realiza o sufre cualquier realidad mencionada en la oración. En la oración, el verbo funciona como el núcleo del predicado. El verbo es la parte de la
+                                    oración o categoría léxica que expresa una acción, movimiento, existencia, consecución, condición o estado del sujeto.
+                                    <br>
+                                    <img src="https://www.learnspanishnow.online/wp-content/uploads/2020/01/Presente-de-tener-venir-decir-oir.png" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form (submit)="saveSubjSpaAlf()">
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Alfabeto
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSubject">
+                                <div class="card-body">
+                                    El abecedario o alfabeto; es una representación estructurada de las letras que conforman un idioma, en su conjunto; estas letras forman palabras para poder expresar lo que deseemos tanto de forma escrita como fonética e incluso por medio de señales, lo
+                                    cual hace posible la comunicación estandarizada. El actual abecedario (alfabeto) español, esta conformado por 27 letras (22 consonantes y 5 vocales), además se reconocen 5 dígrafos compuestos por dos letras que forman
+                                    un sólo sonido.
+                                    <br>
+                                    <img src="https://img.genial.ly/5de42dc4f452e30fa7d2cbc3/a3b5ec02-3f5f-4133-b0a2-a661cf71c54f.png" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-spanish" role="tabpanel" aria-labelledby="v-pills-spanish-tab">
-                <div class="accordion" id="accordionSubject">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Revolución Mexicana
+            <div class="tab-pane fade " id="v-pills-cience" role="tabpanel" aria-labelledby="v-pills-cience-tab">
+                <div class="accordion" id="accordionSubject2">
+                    <form (submit)="saveSubjCieBio()">
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Biología
                       </button>
-                            </h2>
-                        </div>
+                                </h2>
+                            </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionSubject2">
+                                <div class="card-body">
+                                    La biología es la ciencia que estudia los seres vivos y los procesos naturales​ de los organismos vivos, tanto de la descripción de las características y los comportamientos de los organismos individuales, como de las especies en su conjunto, así como
+                                    de la reproducción de los seres vivos y de las interacciones entre ellos y el entorno. Dentro de ella los seres vivos se dividen en cinco reinos: animal, vegetal, fungi, protoctista y monera.
+                                    <br>
+                                    <img src="https://2.bp.blogspot.com/_nbd8tWFkRys/SYBKnwDkXUI/AAAAAAAAAZg/UD6xlKlGE9Y/s1600/01+Reinos.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Independencia de México
+                    </form>
+                    <form (submit)="saveSubjCieQui()">
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Química
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionSubject2">
+                                <div class="card-body">
+                                    La Química es la ciencia que estudia la materia, la energía y sus cambios. El objeto de estudio de la Química son las sustancias y sus interacciones. Su elemento mas conocido es la tabla periódica de los elementos que es una disposición de los elementos
+                                    químicos en forma de tabla, ordenados por su número atómico, ​ por su configuración de electrones y sus propiedades químicas.
+                                    <br>
+                                    <img src="https://www.udt.cl/wp-content/uploads/tabla-periodica-1036-1024x573.png" width="750">
+                                    <a href="https://www.udt.cl/wp-content/uploads/tabla-periodica-1036-1024x573.png">Ver imagen más grande</a>
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Descrubimiento de América
+                    </form>
+                    <form (submit)="saveSubjCieFis()">
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Física
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionSubject2">
+                                <div class="card-body">
+                                    La física ​ es la ciencia natural que estudia los componentes fundamentales del Universo, la energía, la materia, el espacio-tiempo y las interacciones fundamentales.​ La física es una ciencia básica estrechamente vinculada con las matemáticas y la lógica
+                                    en la formulación y cuantificación de sus principios.
+                                    <br>
+                                    <img src="https://sites.google.com/site/aprendamosdelconocimiento/_/rsrc/1429479913882/fisica/fisica_0.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    <form (submit)="saveSubjCieGeo()">
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Geografía
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionSubject2">
+                                <div class="card-body">
+                                    La geografía es la disciplina que trata de la descripción o de la representación gráfica de la Tierra.​​ En sentido amplio es la ciencia que estudia la superficie terrestre, las sociedades que la habitan y los territorios, paisajes, lugares o regiones
+                                    que la forman al relacionarse entre sí. Ademas de ser el conjunto de características que conforman la realidad física y humana de una zona o de un territorio.
+                                    <br>
+                                    <img src="https://concepto.de/wp-content/uploads/2019/09/geografia-e1568584083152.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form (submit)="saveSubjCieMet()">
+                        <div class="card">
+                            <div class="card-header" id="headingTen">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Meteorología
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionSubject2">
+                                <div class="card-body">
+                                    La meteorología incluye el estudio (descripción, análisis y predicción) de las variaciones diarias de las condiciones atmosféricas a gran escala o Meteorología sinóptica, el estudio de los movimientos en la atmósfera involucrados en la dinámica atmosférica
+                                    y su evolución temporal basada en los principios de la mecánica.
+                                    <br>
+                                    <img src="https://www.caracteristicas.co/wp-content/uploads/2019/02/meteorologia-e1551032915637.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-cience" role="tabpanel" aria-labelledby="v-pills-cience-tab">
-                <div class="accordion" id="accordionSubject">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Revolución Mexicana
+            <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                <div class="accordion" id="accordionSubject3">
+                    <form (submit)="saveSubjHisRevM()">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Revolución Mexicana
                       </button>
-                            </h2>
-                        </div>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSubject3">
+                                <div class="card-body">
+                                    La Revolución Mexicana fue un conflicto armado que se inició en México el 20 de noviembre de 1910. Los antecedentes del conflicto se remontan a la situación de México bajo la dictadura conocida como el porfiriato. El conflicto armado que se dio entre
+                                    1910-1917 se inició como una lucha en contra de la perpetuación en el poder del general Porfirio Díaz, pero derivó en una guerra civil entre facciones que luchaban por la "auténtica revolución".
+                                    <br>
+                                    <img src="https://mk0lanoticiavesdar5g.kinstacdn.com/wp-content/uploads/2020/11/revolucion-mexicana-740x490.jpg" width="500">
+                                    <br>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Independencia de México
+                    </form>
+                    <form (submit)="saveSubjHisRevI()">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Revolución Industrial
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject3">
+                                <div class="card-body">
+                                    La Revolución Industrial o Primera Revolución Industrial es el proceso de transformación económica, social y tecnológica que se inició en la segunda mitad del siglo XVIII en el Reino de Gran Bretaña es un período histórico de transformaciones, entre 1760
+                                    y 1840, que desencadenó cambios sin precedentes para las sociedades de todo el mundo. Se caracterizó por el uso de nuevas tecnologías aplicadas a la producción en masa que trajo consigo la modernización de la industria,
+                                    lo que aportó maquinas a vapor las cuales se servian del carbón; transportes e fabricación, traslado y venta de productos conmejor calidad.
+                                    <br>
+                                    <img src="https://www.caracteristicas.co/wp-content/uploads/2017/04/revolucion-industrial-4-e1567619690419.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Descrubimiento de América
+                    </form>
+                    <form (submit)="saveSubjHisInd()">
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Independencia de México
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject3">
+                                <div class="card-body">
+                                    La Independencia de México fue la consecuencia de un proceso político y social resuelto con las armas, que puso fin al dominio español en la mayor parte de los territorios de Nueva España. Fue un proceso de revolución, comenzó el 16 de septiembre de 1810
+                                    con el conocido grito de Dolores y el levantamiento en armas de los habitantes indígenas y campesinos del pueblo convocados por el cura Miguel Hidalgo y Costilla y culminó el día 27 de septiembre de 1821
+                                    <br>
+                                    <img src="https://tipsparatuviaje.com/wp-content/uploads/2020/02/como-se-logro-escribir.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    <form (submit)="saveSubjHisPre()">
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Prehistoria
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSubject3">
+                                <div class="card-body">
+                                    La prehistoria es el período de tiempo transcurrido desde la aparición de los primeros homininos, antecesores del Homo sapiens, hasta que tenemos constancia de la existencia de documentos escritos, ​ algo que ocurrió en primer lugar en el Oriente Próximo
+                                    hacia el 3300 a.C.
+                                    <br>
+                                    <img src="https://i.blogs.es/5d270e/portada/1366_2000.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form (submit)="saveSubjHisAst()">
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Astronomía
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSubject3">
+                                <div class="card-body">
+                                    La astronomía ​ es la ciencia que se ocupa del estudio de los cuerpos celestes del universo, incluidos los planetas y sus satélites, los cometas y meteoroides, las estrellas y la materia interestelar. La astronomía surge desde que la humanidad dejó de
+                                    ser nómada y se empezó a convertir en sedentaria; luego de formar civilizaciones o comunidades empezó su interés por los astros.
+                                    <br>
+                                    <img src="https://www.etapainfantil.com/wp-content/uploads/2019/03/planetas-sistema-solar.png" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
             <div class="tab-pane fade" id="v-pills-english" role="tabpanel" aria-labelledby="v-pills-english-tab">
-                <div class="accordion" id="accordionSubject">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Revolución Mexicana
+                <div class="accordion" id="accordionSubject4">
+                    <form (submit)="saveSubjIngVerb()">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Verbos
                       </button>
-                            </h2>
-                        </div>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSubject4">
+                                <div class="card-body">
+                                    Los verbos son palabras que indican acciones, existencia (ser/estar), posesión (tener) o ánimo. En inglés, usamos la preposición "to" para formar el infinitivo, por ejemplo: "to talk" (hablar), "to eat" (comer), "to change" (cambiar), etc. Los verbos son
+                                    la parte de la oración más complicada. El verbo puede indicar la acción principal (el verbo principal). Un verbo auxiliar añade detalle a la acción o ayuda el verbo principal (también se llaman verbos complementarios).
+                                    <br>
+                                    <img src="https://t2.uc.ltmcdn.com/images/9/1/9/como_conjugar_los_verbos_en_ingles_explicacion_49919_0_600.jpg" width="600">
+                                    <br>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Independencia de México
+                    </form>
+                    <form (submit)="saveSubjIngAux()">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Auxiliares
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject4">
+                                <div class="card-body">
+                                    Los verbos auxiliares en inglés se denominan auxiliary verbs o helping verbs, y son: be, do, have y will. Se utilizan en combinación con verbos principales para formar oraciones negativas e interrogativas, así como tiempos compuestos continuos o perfectos,
+                                    y la voz pasiva.
+                                    <br>
+                                    <img src="https://i2.wp.com/myenglishgoals.com/wp-content/uploads/2019/01/Helping-verb-contractions.jpg?resize=969%2C1211&ssl=1" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Descrubimiento de América
+                    </form>
+                    <form (submit)="saveSubjIngTie()">
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Tiempos
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject4">
+                                <div class="card-body">
+                                    Los tiempos verbales en inglés expresan el momento en que se realiza una acción (verbo). Determinan si la acción ya fue realizada (pasado), se está realizando (presente) o se va a realizar (futuro). El tiempo verbal simple: simplemente muestra cuándo
+                                    la acción ocurre. El tiempo verbal perfecto: significa que la acción ha sido completada. Los tiempos verbales progresivos o continuos: son acciones en vías de realización. Los tiempos perfectos progresivos o continuos:
+                                    indican que la acción empezó, continuó y fue completada.
+                                    <br>
+                                    <img src="https://7esl.com/wp-content/uploads/2018/05/VERB-TENSES-IN-ENGLISH.jpg" width="750">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    <form (submit)="saveSubjIngSuj()">
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Sujetos
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSubject4">
+                                <div class="card-body">
+                                    Los pronombres personales de sujeto se usan mucho en inglés y sirven como el sujeto de una oración o frase. Los sujetos o pronombres en Ingles son: I, You, He, She, It, We, You & They.
+                                    <br>
+                                    <img src="https://2.bp.blogspot.com/-RDymq3zdWBU/VVUIvw3pTMI/AAAAAAAAAtg/8ZIR4aEkLxs/s1600/pronombres-personales-ingles-conjugacion.pngg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form (submit)="saveSubjIngNum()">
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Números
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSubject4">
+                                <div class="card-body">
+                                    Son exactamente iguales en notacion numerica en español, pero a la hora de escribirlos tienen sus propias bases, desde: one, two, three, four, five, six, seve, eight, nine & teen, a números del 10 al 19 se forman con base en las unidades + el sufijo o
+                                    terminación [teen], excepto por los números del 10 al 12 y del 20 a 99, estas cifras se forman agregando [ty] a la raíz del número.
+                                    <br>
+                                    <img src="https://i.pinimg.com/originals/5c/a2/95/5ca29534a55f7100a8708d259f131b58.png" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
             <div class="tab-pane fade" id="v-pills-math" role="tabpanel" aria-labelledby="v-pills-math-tab">
-                <div class="accordion" id="accordionSubject">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Revolución Mexicana
+                <div class="accordion" id="accordionSubject5">
+                    <form (submit)="saveSubjMatPot()">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Potencias
                       </button>
-                            </h2>
-                        </div>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSubject5">
+                                <div class="card-body">
+                                    Las potencias son una manera abreviada de escribir una multiplicación formada por varios números iguales. Son muy útiles para simplificar multiplicaciones donde se repite el mismo número. Las potencias están formadas por la base y por el exponente.
+                                    <br>
+                                    <img src="https://www.problemasyecuaciones.com/potencias/Tabla_potencias.png" width="600">
+                                    <br>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Independencia de México
+                    </form>
+                    <form (submit)="saveSubjMatReg()">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Reglas de los signos
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubject5">
+                                <div class="card-body">
+                                    Cuando se multiplican o dividen dos números positivos, el resultado tendrá signo positivo. Cuando se multiplican o dividen dos números, uno con signo positivo y el otro con signo negativo, el resultado tendrá signo negativo. Cuando se multiplican o dividen
+                                    dos números negativos, el resultado tendrá signo positivo.
+                                    <br>
+                                    <img src="https://i.ytimg.com/vi/Ussd1pR3bQU/maxresdefault.jpg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Descrubimiento de América
+                    </form>
+                    <form (submit)="saveSubjMatEcu()">
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Ecuaciones
                       </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubject5">
+                                <div class="card-body">
+                                    Una ecuación es una igualdad matemática entre dos expresiones, denominadas miembros y separadas por el signo igual, en las que aparecen elementos conocidos y datos desconocidos o incógnitas, relacionados mediante operaciones matemáticas.
+                                    <br>
+                                    <img src="https://afa8ea50-a-62cb3a1a-s-sites.googlegroups.com/site/proyectofm2016/5-temas-del-curso/5-5-ecuaciones-de-primer-grado/10.jpg?attachauth=ANoY7cqtl_8LyF-1Vr_Oikirack7UBK-qdCIdaqjKeGS5vrRjg8pFLl9A8ejXNicTiE6wQEUdZdsD01Tb1CsqBSu9Wr7_fBoV1DBXTSqKtkxP8kQ80HCEeiHx_l3m0GZ7hDGi9Wg-0RoV4HhjpIeRsvd7BjT1osqUcBiMpPvIFKamNOzP6uvMvLhWAFnwYzlkDSH0SXXChPYC3vw4bDgJjgEi2BmceYyx_V--5Vm9gugXZn5dE8H24ygmJgWLpVf2x_Tvcv7uGGgFGhSieJUQyFQLOrnBSMChA%3D%3D&attredirects=0"
+                                        width="750">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    <form (submit)="saveSubjMatRai()">
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Raices
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSubject5">
+                                <div class="card-body">
+                                    La raíz cuadrada de un número es aquel número que al ser multiplicado por sí mismo da como resultado el valor, es decir, cumple la ecuación.
+                                    <br>
+                                    <img src="https://www.academiajaf.com/como/images/imagenes/los_radicales.png" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form (submit)="saveSubjMatOpe()">
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Operaciones básicas
+                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSubject5">
+                                <div class="card-body">
+                                    Las operaciones básicas de la matemática son cuatro: La suma (2 + 2 = 4), la resta (10 - 10 = 0), la multiplicación (5 x 5 = 25) y la división (100 : 10 = 10).
+                                    <br>
+                                    <img src="https://prometeo.matem.unam.mx/repositorio/sites/default/files/recursos/importados/icono_aritmetica_12.svg" width="500">
+                                    <br>
+
+                                    <button class="btn btn-primary btn-block " type="submit ">Marcar como visto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>

@@ -26,8 +26,24 @@ export class LoginService {
     return localStorage.getItem('token');
   }
 
+  getId(){
+    return localStorage.getItem('id');
+  }
+
+  getName(){
+    return localStorage.getItem('name');
+  }
+
+  getMail(){
+    return localStorage.getItem('mail');
+  }
+
   logout(){
     localStorage.removeItem('token');
+    localStorage.removeItem('id');
+    localStorage.removeItem('name');
+    localStorage.removeItem('mail');
     this.router.navigate(['/login'])
   }
+
 }

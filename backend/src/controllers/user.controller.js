@@ -17,14 +17,16 @@ userCrtl.signin = async(req, res) => {
     if (!user) return res.status(401).send("El correo no existe");
     if (user.pass !== pass) return res.status(401).send("Contraseña incorrecta");
 
+    const name = user.name;
+    const id = user._id;
     const token = jwt.sign({ _id: user._id }, process.env.SECRET_KEY)
-    return res.status(200).json({ token });
+    return res.status(200).json({ token, id, name, mail });
 }
 
 userCrtl.getCreateUser = async(req, res) => {
 
-    const { name, mail, pass, confirm_pass, admin } = req.body;
-    if (pass != confirm_pass) {
+    const { name, mail, pass, pass2, admin } = req.body;
+    if (pass != pass2) {
         return res.status(401).send("Las contraseñas no coinciden");
     }
     if (pass.length < 4) {
@@ -50,13 +52,16 @@ userCrtl.getUser = async(req, res) => {
 
 
 userCrtl.editUser = async(req, res) => {
-    const { id } = req.params;
+    const { id, pass, pass2 } = req.body;
+
+    if (pass != pass2) {
+        return res.status(401).send("Las contraseñas no coinciden");
+    }
+
     const user = {
-        name: req.body.name,
-        mail: req.body.mail,
         pass: req.body.pass
     };
-    console.log(id);
+
     await User.findByIdAndUpdate(id, { $set: user }, { new: true });
     res.json({
         status: 'user update'

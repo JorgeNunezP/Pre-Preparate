@@ -14,23 +14,12 @@ questCrtl.getQuests = async(req, res) => {
 
 questCrtl.getCreateQuest = async(req, res) => {
 
-    const { name, mail, pass, admin } = req.body;
-    /* if (pass != confirm_pass) {
-        return res.status(401).send("Las contraseñas no coinciden");
-    } */
-    if (pass.length < 4) {
-        return res.status(401).send("La contraseña debe de tener al menos 4 caracteres");
-    }
-    const emailUser = await Quest.findOne({ mail: mail });
-    if (emailUser) {
-        // res.redirect('/users/singup');
-        res.status(401).send("El email ya existe");
-    } else {
-        const newUser = new Quest({ name, mail, pass, admin });
-        await newUser.save();
-        //res.redirect('/users/singin')
-        res.status(200).send("usuario creado correctamente");
-    }
+    const { subject, sub, question, answer1, answer2, answer3, answer4, correct } = req.body;
+
+    const newQuest = new Quest({ subject, sub, question, answer1, answer2, answer3, answer4, correct });
+    await newQuest.save();
+    res.status(200).send("Pregunta creada correctamente");
+
 }
 
 
@@ -39,6 +28,20 @@ questCrtl.getQuest = async(req, res) => {
     res.json(quest);
 }
 
+questCrtl.getUserQuests = async(req, res) => {
+    const quest = await Quest.find(req.params.user_id);
+    res.json(quest);
+}
+
+questCrtl.getSubQuests = async(req, res) => {
+    const quest = await Quest.find({ subject: req.params.subject });
+    res.json(quest);
+}
+
+questCrtl.getSubSubQuests = async(req, res) => {
+    const quest = await Quest.find({ subject: req.params.subject, sub: req.params.sub });
+    res.json(quest);
+}
 
 questCrtl.editQuest = async(req, res) => {
     const { id } = req.params;

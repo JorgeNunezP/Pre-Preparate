@@ -2,34 +2,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
         <h1>Resultados del examen</h1>
     </div>
 
     <div class="panel panel-primary">
-        <div class="panel-heading">
-            Daniel Pérez
-        </div>
+
         <div class="panel-body">
-            <h3>Matematicas</h3>
+            <h3>Español</h3>
             <div class="progress">
-                <div style="width: 50%;" class="progress-bar bg-info">10/20</div>
+                <div class="progress-bar bg-info" [ngStyle]="{width: esp + '%'}">{{esp}}%</div>
             </div>
-            <h3>Historia</h3>
+
+            <h3>Mateticas</h3>
             <div class="progress">
-                <div style="width: 25%;" class="progress-bar bg-info">5/20</div>
+                <div class="progress-bar bg-info" [ngStyle]="{width: mat + '%'}">{{mat}}%</div>
             </div>
             <h3>Ingles</h3>
             <div class="progress">
-                <div style="width: 75%;" class="progress-bar bg-info">15/20</div>
+                <div class="progress-bar bg-info" [ngStyle]="{width: ing + '%'}">{{ing}}%</div>
             </div>
             <h3>Ciencias</h3>
             <div class="progress">
-                <div style="width: 50%;" class="progress-bar bg-info">10/20</div>
+                <div class="progress-bar bg-info" [ngStyle]="{width: cie + '%'}">{{cie}}%</div>
             </div>
-            <h3>Tecnologia</h3>
+            <h3>Historia</h3>
             <div class="progress">
-                <div style="width: 100%;" class="progress-bar bg-info">20/20</div>
+                <div class="progress-bar bg-info" [ngStyle]="{width: his + '%'}">{{his}}%</div>
             </div>
         </div>
     </div>

@@ -11,6 +11,9 @@ app.use(express.json());
 // Settings
 app.set('port', process.env.PORT || 3000);
 
+app.use('/api', require('./routes/dev.routes'));
+app.use('/api', require('./routes/question.routes'));
+app.use('/api', require('./routes/subSee.routes'));
 app.use('/api', require('./routes/subject.routes'));
 app.use('/api', require('./routes/user.routes'));
 
